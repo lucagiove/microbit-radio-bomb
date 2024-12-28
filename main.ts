@@ -62,7 +62,7 @@ function setupPlayer (player: number) {
     } else {
         bomb = 0
     }
-    basic.showString("" + player)
+    basic.showString("" + (player))
 }
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "exploded") {
@@ -100,7 +100,7 @@ let bomb = 0
 let lastPlayer = 0
 let firstPlayer = 0
 let player = 0
-player = 3
+player = 1
 firstPlayer = 1
 lastPlayer = 3
 radio.setGroup(1)
